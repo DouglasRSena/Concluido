@@ -1,0 +1,346 @@
+Durante o vídeo usamos fillRect() para desenhar alguns retângulos no canvas. Agora, vamos relembrar como este método funciona.
+
+Analise as opções abaixo e marque a verdadeira.
+
+Alternativa correta
+Se não receber nenhuma coordenada, o JavaScript vai começar o desenho nas coordenadas 0, 0, ou seja, nas coordenadas 0 no eixo X e 0 no eixo Y - o canto superior esquerdo da tela.
+F - Sem coordenadas nada será feito
+
+
+Alternativa correta
+Se tentarmos usar fillRect da forma fillRect(100, 100), com somente alguns dos valores, o JavaScript vai considerar as coordenadas iniciais como 0,0 e utilizar as coordenadas passadas com o método como finais.
+F - Dessa forma definimos apenas onde ele começa, mas ele não sabe até onde deve ir
+
+
+O fillRect() precisa de algumas informações para conseguir desenhar o retângulo, que estarão na ordem: posição inicial X do “pincel”, posição inicial Y do 
+“pincel”, posição final X do “pincel”, posição final Y do “pincel”.
+V - São necessárias todas as coordenadas, na ordem correta para iniciar
+-----------------------------------------
+Até então foram usados termos com a mesma estrutura diversas vezes, como pincel.comando(informação1, informação2, etc), com vários comandos e informações diferentes. Chamamos estas instruções que as bibliotecas (APIs) deixam disponíveis para usarmos em nossos programas de métodos.
+
+Sabendo disso, analise as afirmações abaixo e marque as verdadeiras.
+
+
+Os métodos moveTo() e lineTo() vistos na aula só podem ser usados não apenas para desenhar triângulos, mas várias outras formas poligonais.
+
+Para desenhar formas circulares, podemos usar os mesmos métodos utilizados para triângulos, lineTo() e moveTo(), sem esquecer das coordenadas finais 2 * 3.14.
+
+Existem diversos métodos diferentes para desenhar. Se for uma forma simples, como um retângulo, podemos usar fillRect(). Porém para formas com mais possibilidades de desenho, vamos precisar utilizar outros métodos.
+
+Para desenhar formas circulares, podemos usar os mesmos métodos utilizados para triângulos, lineTo() e moveTo(), sem esquecer das coordenadas finais 2 * 3.14.
+-----------------------------------------
+De acordo com o que aprendemos, funções são muito úteis para resolver problemas durante nosso desenvolvimento.
+
+Selecione as alternativas com situações em que poderíamos utilizar funções como uma solução.
+
+Alternativa correta
+Aumentar a complexidade do algoritmo.
+
+
+Alternativa correta
+Automatizar tarefas com código mais genérico.
+
+
+Podemos criar uma função genérica que receba os dados necessários por meio de parâmetros, e deixar que um loop chame a mesma função várias vezes, com um parâmetro diferente a cada vez.
+
+Alternativa correta
+Repetição de código.
+
+
+Em vez de escrever uma linha para cada forma que queremos criar, passando manualmente as informações de cada uma, podemos escrever uma função para, por exemplo, criar um quadrado colorido de qualquer tamanho e cor.
+
+Alternativa correta
+Deixar o código organizado e separado.
+
+
+Utilizamos funções para deixar cada parte do código bem separada, assim sabemos exatamente o que está acontecendo em cada uma. Além do mais, é prática comum utilizarmos nomes bem específicos para cada função, assim quem ler o código não terá problemas em saber o que elas fazem.
+-----------------------------------------
+Os loops, ou laços de repetição, são uma estrutura básica em programação que usamos para repetir tarefas - lembrando que repetir e automatizar tarefas são algumas das atividades principais que um programa deve fazer.
+
+Escolha alternativas que demonstrem corretamente o funcionamento dessas estruturas.
+
+Alternativa correta
+Todo loop precisa de uma linha de código dentro dele, que serve para mudar a condição atual.
+
+
+Quando criamos um loop, passamos uma condição, por exemplo while(x < 600) ou “enquanto x for menor que 600”. Mas se não for passada nenhuma outra linha de código dentro do loop para que x em algum momento tenha esse valor, por exemplo x = x + 50, o código entra no chamado loop infinito.
+
+Alternativa correta
+Loops executam enquanto a condição passada (normalmente entre parênteses()) for verdadeira.
+
+
+Quando o programa executa a linha de código onde está o loop, fica “preso” dentro do loop enquanto a condição for verdadeira. Por exemplo, while (x < 600).
+
+Alternativa correta
+Se não escrevermos nenhum código para modificar a condição de saída do loop, o JavaScript cancela a execução do código para evitar o loop infinito.
+
+
+Alternativa correta
+No caso abaixo:
+
+var x = 0;
+
+while(x < 600) {
+  desenhaQuadrado(x, 0, 'green');
+  x = x + 50;
+}
+e
+
+for(var x = 0; x < 600; x = x + 50) {
+  desenhaQuadrado(x, 0, 'green');
+}
+Os dois loops são escritos de formas diferentes, porém o resultado da execução é o mesmo.
+
+
+É normal existir várias formas de escrever códigos que façam a mesma tarefa, e este é um destes casos. Porém, embora o resultado final seja o mesmo, há uma diferença na sintaxe (ou seja, na forma de escrever) de cada um: enquanto o while precisa receber manualmente em alguma parte do código a linha que altera a condição verdadeira (no caso, x = x + 50;, pela sintaxe do for precisamos passar essa informação nos 
+-----------------------------------------
+Nesta aula, aprendemos sobre as vantagens de se utilizar funções e como unir funções e loops, uma prática muito comum em lógica de programação.
+
+A partir do que vimos, selecione as alternativas corretas.
+
+Alternativa correta
+Vamos imaginar que escrevemos um while para preencher o <canvas> com quadrados verdes, mas esquecemos de atualizar a condição para que x mude de valor:
+
+var x = 0;
+
+while(x < 600) {
+  desenhaQuadrado(x, 0, 'green');
+}
+Nesse caso, os quadrados ainda serão desenhados corretamente na tela lado a lado, mas como o valor de x nunca é modificado para aumentar até 600, o programa vai causar um loop infinito.
+
+
+Alternativa correta
+Os loops podem ser utilizados em conjunto com funções para automatizar algumas tarefas de código
+
+
+É muito comum chamarmos funções para serem executadas dentro de loops, pois assim passamos para o programa a tarefa de controlar a quantidade de vezes que a função é executada, quando parar a execução e com quais informações ela vai trabalhar a cada vez - desde que não tenha erros no código que nós escrevemos!
+
+Alternativa correta
+Chamar funções dentro de loops é algo que pode ser feito em um projeto com poucas linhas, mas que não é recomendável no dia a dia.
+
+
+Alternativa correta
+Nos exemplos de loops feitos no vídeo:
+
+var x = 0;
+
+while(x < 600) {
+  desenhaQuadrado(x, 0, 'green');
+  x = x + 50;
+}
+e
+
+for(var x = 0; x < 600; x = x + 50) {
+  desenhaQuadrado(x, 0, 'green');
+}
+O valor de x usado como condição para o loop (x = x + 50) é exatamente o mesmo passado como parâmetro para a função desenhaQuadrado(x, 0, ‘green’).
+
+
+Nos exemplos da aula, x é uma variável, ou seja, um espaço na memória onde podemos guardar valores e utilizá-los no código. Então, se a variável x guarda o valor 0 no início do código, em todos os lugares onde passarmos x no código, o programa vai automaticamente substituir pelo valor de 0. Essa lógica continua funcionando depois de modificarmos o valor de 
+-----------------------------------------
+Nessa aula, criamos uma variável chamada pincel, como ilustra o código abaixo:
+
+var pincel = tela.getContext('2d');COPIAR CÓDIGO
+Além disso, criamos uma função que exibe um alerta na tela:
+
+function exibeAlerta() {
+       alert('Cliquei');
+    }COPIAR CÓDIGO
+Com base nos códigos acima e no que aprendemos, analise as afirmações abaixo e marque a verdadeira.
+
+As variáveis e as funções possuem nomes determinados.
+V - A função se chama exibeAlerta e a variável se chama pincel.
+
+Cada função deve ter apenas uma linha de código dentro dela.
+
+Tanto a variável como a função armazenam um valor.
+
+
+Parabéns, você acertou!
+
+-----------------------------------------
+Uma pessoa criou uma função para exibir uma saudação como ilustra o código abaixo:
+
+function exibeSaudacao(nome) {
+    alert('Olá ' + nome)
+}
+exibeSaudacao()COPIAR CÓDIGO
+Porém, o programa não está funcionando como o esperado. Sempre que ele é executado, o resultado não exibe o nome da pessoa, e sim a mensagem Olá undefined.
+
+Sabendo disso, analise as afirmações abaixo e marque aquela que contém a solução para esse problema.
+
+Existe um erro na abertura e fechamento das chaves, delimitando o tamanho da função.
+
+
+O erro está no sinal de soma + do alert. Quando queremos juntar um texto com outro no JavaScript, precisamos incluir o sinal de dois pontos :.
+
+
+O erro está na chamada da função.
+V - Quando executamos a função exibeSaudacao() e não passamos nenhum nome, por exemplo, exibeSaudacao('Maria') ou exibe
+-----------------------------------------
+De modo geral, uma função possui uma série de instruções para executar um único comportamento, assim como a seguinte função e sua chamada:
+
+function somarDoisValores(valor1, valor2) {
+    resultadoDaSoma = valor1 + valor2
+}
+
+console.log(somarDoisValores(200, 1000))COPIAR CÓDIGO
+Com base no código acima, analise as afirmações a seguir e assinale a que estiver correta.
+
+Alternativa correta
+Será exibido no console o valor 1200.
+
+
+O valor 1200 não corresponde ao que será exibido no console.
+
+Alternativa correta
+O valor exibido no console será 2001000, pois o operador de soma + junta o valor 200 com o valor 1000.
+
+
+Quando temos 2 valores numéricos entre o operador soma, não acontece a concatenação e sim a operação matemática de soma.
+
+Alternativa correta
+O valor undefined será exibido no console.
+
+
+A soma foi realizada e armazenada na variável resultadoDaSoma, porém, não retornamos o valor através da palavra return, como mostra o código abaixo:
+
+function somarDoisValores(valor1, valor2) {
+    resultadoDaSoma = valor1 + valor2
+    return resultadoDaSoma
+}
+
+console.log(somarDoisValores(20
+-----------------------------------------
+Uma função pode conter muitos parâmetros ou nenhum, como ilustram os códigos:
+
+function atualizaTela() {
+...
+    }
+function desenhaCirculo(x, y, raio) {
+...
+    }
+Sabendo disso, analise as afirmações abaixo e marque as verdadeiras em relação às funções no Javascript.
+
+Alternativa correta
+Sempre colocamos os parâmetros entre os parênteses, quando necessário.
+R - Nem toda função tem parâmetro. Porém, caso as funções precisem de um parâmetro, eles sempre serão adicionados entre os parênteses.
+
+Os nomes das funções não importam muito, apenas seu comportamento.
+
+Toda função em Javascript precisa de um retorno (return).
+
+
+-----------------------------------------
+Para ser aprovada em um teste de emprego, uma pessoa foi submetida ao seguinte teste de lógica:
+
+a = 100
+b = 'palavra'
+c = -50
+
+if (b.length > 7) {
+    console.log(b)
+} else {
+    console.log(a + c)
+}COPIAR CÓDIGO
+Com base no trecho de código acima, marque a alternativa correta a respeito do resultado esperado.
+
+Alternativa correta
+A saída do console será palavra.
+
+
+Alternativa correta
+Um erro informará que não existe length em strings, apenas listas.
+
+
+Alternativa correta
+A saída do console será 50.
+
+
+Como a palavra contida na variável b possui 7 letras e 7 não é maior que 7, é igual, a condição else será executada. Nela, executamos a seguinte operação: 100 -50 que é 50.
+-----------------------------------------
+No Javascript podemos incluir um temporizador para executar algumas funções. Nesta aula, utilizamos a função setInterval().
+
+Assinale a alternativa que traz a afirmação correta a respeito desta função.
+
+Alternativa correta
+Precisamos informar apenas o tempo como parâmetro.
+
+
+Alternativa correta
+Ela só funciona quando estamos utilizando o canva ou desenhando na tela.
+
+
+Alternativa correta
+Esta função requer dois parâmetros obrigatórios.
+
+
+A função setInterval requer dois parâmetros: o código ou função a ser processado e o tempo em milissegundos entre os eventos do temporizador.
+-----------------------------------------
+Conforme aprendemos, para desenhar o alvo na tela usamos três vezes a função desenhaCirculo(x, y, raio, cor), e precisamos executá-la na ordem certa para desenhar um alvo.
+
+Selecione a alternativa com a afirmação correta sobre a ordem para o desenho do alvo.
+
+Alternativa correta
+A ordem será o maior primeiro e o menor por último.
+
+
+Os círculos menores vão ser desenhados em cima dos maiores, formando um alvo.
+
+Alternativa correta
+A ordem não é importante.
+
+
+Alternativa correta
+A ordem será o menor primeiro e o maior por último.
+-----------------------------------------
+Vimos no vídeo que ao clicar no canvas, chamamos a função dispara(), e assim teremos acesso à posição do clique do mouse. Porém não saberemos a posição do alvo (xAleatorio e yAleatorio).
+
+Selecione a alternativa que resolve esse problema.
+
+Alternativa correta
+Declarar as variáveis xAleatorio e yAleatorio fora das funções.
+
+
+Se declararmos as variáveis fora das funções, poderemos acessar seu valor em qualquer função, inclusive em dispara().
+
+Alternativa correta
+Sortear novos números usando a função sorteiaPosicao().
+
+
+Alternativa correta
+Retornar as variáveis da função atualizaTela().
+-----------------------------------------
+Com o alvo desenhado em uma posição fixa, como 100 em x e 100 em y, não temos um jogo divertido. Precisamos que a posição do alvo seja diferente a cada vez que jogarmos, o que conseguimos fazer usando a função Math.random(), que vai atribuir um número aleatório para as posições. Porém, teremos que recarregar a página e trocar o alvo de lugar toda vez que formos jogar.
+
+Selecione a opção com a função que vai fazer essa troca de posições de tempos em tempos, quando for necessário.
+
+Alternativa correta
+Math.floor().
+
+
+Alternativa correta
+setTimeout().
+
+
+Alternativa correta
+setInterval().
+
+
+Com o setInterval() podemos definir um intervalo de tempo para executar a função novamente.
+-----------------------------------------
+
+-----------------------------------------
+
+-----------------------------------------
+
+-----------------------------------------
+
+-----------------------------------------
+
+-----------------------------------------
+
+-----------------------------------------
+
+-----------------------------------------
+

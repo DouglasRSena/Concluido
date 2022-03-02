@@ -1,0 +1,121 @@
+<meta charset="UTF-8">
+<script>
+
+let SalarioBruto = Number(window.prompt("Qual o salário bruto do funcionário?"))
+let Dependentes = Number(window.prompt("Quantos dependentes ele possui?"))
+let MesesTrabalhados = Number(window.prompt("Quantos meses ele trabalhou?"))
+
+//CALCULO DO INSS
+    if(SalarioBruto >= 6433.57){
+            INSS=751.99
+        }
+            else if(SalarioBruto >= 3305.23){
+                INSS = (1100*0.075+1103*0.09+1101.74*0.12+(SalarioBruto-3305.23)*0.14)
+            }
+                else if(SalarioBruto >= 2203.49){
+                    INSS = (1100*0.075+1103.48*0.09+(SalarioBruto-2203.49)*0.12)
+                }
+                    else if(SalarioBruto >=1100.01){
+                        INSS = (1100*0.075+(SalarioBruto-1100.01)*0.09)
+                    }
+                        else if(SalarioBruto <=1100){
+                            INSS = (SalarioBruto*0.075)
+                        }
+
+//CALCULO DO IRRF (Imposto de Renda Retido na Base)
+    IRRFBase = SalarioBruto - INSS - (Dependentes*189.59);
+
+        if (IRRFBase <= 1903.98) {
+            IRRF = 0
+                }
+                else if (IRRFBase <= 2826.65){
+                IRRF = ((IRRFBase-1903.98)*0.075);
+                    }
+                    else if(IRRFBase <= 3751.05) {
+                    IRRF = ((IRRFBase-2826.65)*0.15+922.67*0.075);
+                        }
+                        else if (IRRFBase <= 4664.67) {
+                        IRRF = ((IRRFBase-3751.05)*0.225+924.4*0.15+922.67*0.075);
+                            }
+                            else if (IRRFBase >= 4664.68) {
+                                IRRF = ((IRRFBase-4664.68)*0.275+913.62*0.225+924.4*0.15+922.67*0.075);
+                                    }
+
+//CALCULO DO DESCONTO DE TRANSPORTE
+    DescTran = SalarioBruto * 0.06;
+
+//TOTAL DE  DESCONTOS
+    DescTotal = INSS + IRRF + DescTran;
+
+//SALÁRIO LÍQUIDO
+    SalarioLiquido = SalarioBruto - DescTotal;
+
+//13° + Ferias
+    DecimoTerceiro= ((SalarioBruto - INSS - IRRF) / 12) * MesesTrabalhados;
+    Ferias= (SalarioBruto - INSS - IRRF) * (1 + 1 / 3); // 1 inteiro das férias e 1/3 adicional de férias
+    
+        DTF= DecimoTerceiro + Ferias; //Decimo Terceiro + Ferias    
+
+///IRRF (13° + Ferias)
+    IRRFDTF = IRRF * (2+1/3); //1 inteiro do 13º + 1 inteiro das férias e 1/3 do adicional de férias
+
+//FORMATAÇÃO DOS VALORES PARA APRENSENTAÇÃO AO USUÁRIO
+
+    SalarioBrutoForm = SalarioBruto.toLocaleString('pt-BR',{
+        style: 'currency',
+        currency: 'BRL'
+        });''
+  
+    INSSForm = INSS.toLocaleString('pt-BR',{
+        style: 'currency',
+        currency: 'BRL'
+        });
+
+    IRRFForm = IRRF.toLocaleString('pt-BR',{
+        style: 'currency',
+        currency: 'BRL'
+        });
+   
+    DescTransForm = DescTran.toLocaleString('pt-BR', {
+        style: 'currency',
+        currency: 'BRL'
+        });
+
+    DescTotalForm = DescTotal.toLocaleString('pt-BR', {
+        style: 'currency',
+        currency: 'BRL'
+        });
+      
+    SalarioLiquidoForm = SalarioLiquido.toLocaleString('pt-BR', {
+        style: 'currency',
+        currency: 'BRL'
+        });
+   
+    DTFForm= DTF.toLocaleString('pt-BR', {
+        style: 'currency',
+        currency: 'BRL'
+        });
+
+    IRRFDTFForm=IRRFDTF
+
+//        function formataDinheiro (){
+//            toLocaleString('pt-BR', {
+//        style: 'currency',
+//        currency: 'BRL'
+//        });
+//        }
+
+//Entregar os dados ao usuário
+
+document.write(
+        "O Salário Bruto informado foi "+ SalarioBrutoForm +
+        "<br> Desconto INSS: "+ INSSForm +
+        "<br> Desconto IRRF: "+ IRRFForm +
+        "<br> Desconto Transporte: " + DescTransForm +
+        "<br> O Total de descontos é " + DescTotalForm +
+        "<br> Salario Liquido: " + SalarioLiquidoForm +
+        "<br> 13° + Ferias: " + DTFForm +
+        "<br> IRRF do 13° + Ferias: " + IRRFDTFForm
+        )
+   
+</script>

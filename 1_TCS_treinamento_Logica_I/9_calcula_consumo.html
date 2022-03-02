@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+    <head>
+        <meta charset="UTF-8">
+        <title>Calcular consumo</title>
+    </head>
+    
+    <body>
+        <h3>Álcool ou Gasolina?</h3>
+        <div>
+            <p>
+                Seu carro tem um tanque de 40 litros. Com gasolina e usando todo o tanque você fez um caminhoComGasolina de 480 quilômetros. Qual é o consumoDeGasolina?
+            </p>
+            <p>
+                Com álcool, um tanque de 40 litros fez um caminhoComAlcool de 300 quilômetros.Qual é o consumoDeAlcool?
+            </p>
+        </div>
+    <script>
+
+        function pulaLinha(){
+            document.write("<br><br>")
+        }
+        function mostra(conteudo){
+            document.write(conteudo)
+        }
+
+        var litrosComsbustivel = 40; //litros
+        var caminhoComGasolina = 480; //Km
+        var caminhoComAlcool = 300; //Km  
+
+        mostra("O Consumo de Gasolina é " + caminhoComGasolina/litrosComsbustivel +" Km/l");
+        pulaLinha();
+        mostra("O consumo de Alcool é " + caminhoComAlcool/litrosComsbustivel +" Km/l");
+
+
+</script>            
+    </body>
+
+</html>

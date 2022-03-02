@@ -1,0 +1,1645 @@
+No passado, era preciso instalar os mais diversos programas, muitos deles pagos, para que fosse possível dar os primeiros passos no mundo da programação.Isso acabava espantando os candidatos à programação. A boa notícia é que as coisas mudaram! 
+
+Temos as seguintes afirmações sobre o parágrafo anterior:
+
+A) Os sistemas operacionais mais populares do mercado (Windows, Linux, Mac) já vêm com um navegador web padrão e todo navegador é capaz de interpretar um código escrito por nós.
+B) Uma das linguagens que o navegador compreende é a HTML.
+C) Um navegador é um poliglota.
+
+Sim -Todos os sistemas operacionaisdo mercado possuem sim um navegador capaz de interpretar um código
+Sim - O navegador compreende HTL e mais
+Sim - Um navegador entende várias liguas e liguagens
+
+-------------------------------
+Com base na revisão que fizemos de extensão de arquivo e convenção, temos os seguintes nomes de arquivo:
+A) meu_primeiro_programa
+B) segundoprograma.html
+C) MEU_PROGRAMA.HTML
+D) programa_ninha.HTML
+E) lógica_de_programação.html
+
+Qual das opções acima NÃO segue a convenção que utilizaremos até o final do curso?
+
+A)F - Sem extensão de arquivo
+B)F - Sem underline para separar palavras
+C)F - tudo maiusculo
+D)F - extensão maiusculo
+E)F - palavra com acentuação
+
+Correto = minusculo_sem_acento_separado_por_underline_com_terminacao_correta.html
+
+------------------------------
+
+Todo navegador (ou Browser, em inglês) consegue ler e entender HTML que é a linguagem utilizada para a apresentação de dados e informações. Sobre o HTML podemos dizer:
+
+A) Sua sigla significa Hyper Text Markup Language, ou seja, é uma linguagem de marcação de texto caracterizada pelo uso de TAGS.
+B) TAG indicam instruções especiais a serem interpretadas pelo navegador.
+C) A TAG <h1> é usada para criar links para que o usuário seja levado de uma página para outra.
+D) <meta> é o exemplo de uma TAG HTML.
+
+A)V - significado correto e é caracterizada pelo uso das TAGs 
+B)V - Sim, as TAGs mostram ao leitor do HTML o que irá acontecer com cada texto
+C)F - A TAG h1 é usada para destacar o título da página - H1 é o texto principal(maior destaque)
+D)V - Sim, é uma TAG que define uma meta informação, mas possui um uso diferenciado. ex"<meta IfoDaMetaFicaDentro>"
+
+------------------------------
+A linguagem HTML é uma linguagem baseada em tags. Sobre tags podemos dizer:
+
+A) Toda tag começa com < e termina com >. Por exemplo, existem as tags <h1> e <a>.
+B) Dependendo da tag, ela pode ou não ter fechamento. Por exemplo, a tag <h1> precisa de fechamento para delimitar seu conteúdo. Já a tag <meta> não. Ela define o valor de diferentes atributos, como o que vimos mais cedo, o chamado charset.
+C) O seguinte exemplo é de uma tag válida: <h1>Olá<h1>.
+
+Sobre as afirmações acima podermos dizer que:
+
+A)V - Para ser uma TAG precisa, obrigatoriamente estar entre "<MenorQue_MaiorQue>"
+B)V - Normalmente precisamos abrir e fechar, entretanto há excessões como o "<meta IfoDaMetaFicaDentro>"
+C)F - A tag de fechamento está sem a barra "/" - Correto = </h1>Olá<h1>
+
+------------------------------
+Barney, aluno da Alura, iniciante no mundo da programação, partiu para a prática e escreveu seu primeiro código usando a linguagem HTML. Ele criou o arquivo teste.html com o seguinte conteúdo que está com erros. Analise:
+
+<h1>Um pequeno passo para quem já programa, um gigantesco salto para quem esta começando<h1>
+Este é meu primeiro programa!COPIAR CÓDIGO
+
+Não definiu a cadeia de caracteres, Não fechou a TAG h1 e não colocou parágrafo.
+
+------------------------------
+Barney resolveu ajudar um amigo que está com problemas de acentuação em seu código. Ele pediu que um colega adicionasse a famosa tag <meta>. Contudo, mesmo depois de ter adicionado a tag a exibição da página no navegador continua com problema.
+
+Veja o código escrito por Euzébio, amigo de Barney:
+
+<meta charset="UTT-8">
+
+o correto é UTF-8
+
+------------------------------
+Quando escrevemos um código JavaScript, o primeiro passo é dar uma pista ao navegador para que ele entenda que o trecho de código a ser lido é JavaScript. Fazemos isso através:
+
+<Script>
+    Sua programação
+</Script>
+
+------------------------------
+Sobre alert, temos as seguintes afirmações:
+
+A) A instrução alert recebe um texto e todo texto em JavaScript é definido entre aspas. Exemplos de texto:
+"Olá"
+"Isso aqui é um texto"COPIAR CÓDIGO
+B) Podemos usar tanto a instrução alert quantoALERT pois o JavaScript reconhece as duas formas.
+C) O uso dos parênteses é opcional, podemos ou não usá-lo.
+
+A)V - Sempre que queremos demonstrar que algo é um texto, não um comando, usamos as "Aspas" (string=texto em JavaScript)
+B)F - As instruções são sempre escritas em um formato único (tudo minusculo)
+C)F - Os parênteses são obrigatorios para delimitar onde é início e onde é o fim do alert()
+
+------------------------------
+Aprendemos que a instrução alert tem como funcionalidade a exibição de um alerta pop up. Sendo assim, temos o seguinte código:
+
+<meta charset="UTF-8">
+<script>
+    alert();
+</script>COPIAR CÓDIGO
+
+Sobre a maneira pela qual a instrução alert foi escrita podemos dizer que:
+A) Nenhum popup será exibido
+B) O popup será exibido, mas nenhuma mensagem será exibida.
+C) Haverá um erro que pode ser averiguado pelo debugger, o console do navegador.
+
+Podemos dizer que:
+A)F - Como o comando está completo ele o PopUP será exibido
+B)V - O comando está completo mas não possui nada para exibir
+C)F - Como não tem erro sintático no texto, o debbuger não considera que há um erro. Há um erro lógico "qual o sentido de apresentar uma PopUP Vazia?" (o computador apenas obedece)
+
+------------------------------
+Toda linguagem de programação possui ferramentas que nos auxiliam a descobrir o que há de errado com o código, principalmente no que diz respeito a erros de sintaxe, aquele tipo de erro que ocorre quando deixamos de seguir regras que a linguagem de programação utiliza.
+
+Vejamos o seguinte código escrito por Tio Ben:
+
+<meta charset="UTF-8">
+<script>
+    alert("Isso");
+    alert("é");
+    alert("um");
+    alert("programa);//Faltou um fechamento de Aspas " depois do programa e antes do parenteses
+    alert("sim");
+</script>COPIAR CÓDIGO
+Apesar de Tio Ben jurar que verificou o código mil vezes, nada de errado é encontrado. Ajude Tio Ben a identificar o local no qual ele cometeu um erro de sintaxe. DICA: experimente criar o programa tio_ben.html e cole nele o código acima. Rode e peça ajuda do depurador (debugger), o melhor amigo do programador na busca de erros.
+
+
+-------------------------------
+Temos mais um código escrito por um aspirante a programador
+
+<meta charset="UTF-8">
+<script>
+    alert("Eu chego lá!")
+</script>
+
+Podemos afirmar que:
+
+A) Nada acontece, inclusive nenhum erro é exibido no debugger (console).
+B) O código funciona, ou seja, o alert é exibido na tela corretamente.
+C) Nada acontece e uma mensagem de erro é exibida no console.
+
+Das afirmativas acima temos que:
+
+A) Nada acontece, inclusive nenhum erro é exibido no debugger (console).
+B) O código funciona, ou seja, o alert é exibido na tela corretamente.
+C) Nada acontece e uma mensagem de erro é exibida no console.
+
+A)F - O alert será exibido
+B)V - O código funciona, entretanto, faltou um ponto e virgula (;) no fechamento do código
+C)F - O alert é exibido e não aparecem erros
+
+-------------------------------
+Penélope começou o curso de lógica de programação da Alura e já se deparou com o seguinte problema: Ela criou o arquivo victoria.html e dentro dele escreveu o seguinte código que deveria exibir dois alertas (pop ups) na tela:
+
+<meta charset="UTF-8">
+
+<script>
+    alert("Olá, este é meu primeiro programa!");
+    alert("Gostaram?");
+</script>
+
+O problema é que os pop ups não são exibidos e o código JavaScript é exibido como conteúdo da página.
+Como deve ser o código de Penélope para que os alertas sejam mostrados corretamente?
+
+BASTA QUE O OS COMANDOS "alert" ESTEJAM INSERIDOS DENTRO DAS TAGs SCRIPT
+
+-------------------------------
+O que deveria ser alterado para que o código de Fugêncio funcionasse?
+
+<meta charset="UTF-8">
+
+<h1>Primeiro programa</h1> <!--o que é de HTML deve estar dentro do HTML e Fora da parte de Script-->
+<script>
+    alert("Este é um popup feito com JavaScript");//O que é de JavaScript tem que estar dentro do JavaScript
+</script>
+
+-------------------------------
+Sobre o uso de tags, em HTML, podemos afirmar:
+
+A) Uma convenção muito usada é usar tags em letra maiúscula.
+B) Uma convenção muito usada é usar tags em letra minúscula.
+C) Podemos usar tanto tags em maiúscula ou em minúscula que não faz diferença para o navegador.
+
+Sobre as afirmativas acima podemos dizer que:
+
+A)F - tags são usadas em letras minúsculas
+B)V - tags em letra minúscula
+C)C - Para o navegador não faz diferença, entretando, continua sendo uma má prática.
+
+--------------------------------
+Qual das opções abaixo exibe o texto "Isso será exibido para o usuário" usando essa nova forma de nos comunicarmos com o usuário?
+
+document.Write("Isso será exibido para o usuário");//F - write está com W maiusculo portanto não irá funcionar
+document write("Isso será exibido para o usuário");//F - está faltando o ponto entre document.write portanto não funciona
+document.write("Isso será exibido para o usuário");//V - Temos a instrução, parenteses, string entre aspas e fechamento de parenteses+ ponto e virgula
+
+--------------------------------
+Qual das opções abaixo mostra a saída do programa quando ele é processado pelo navegador?
+
+A média do valor gasto com as viagens é250 // V - a string que continha o texto não estava colocando espaço apos o "é" portanto fica assim
+A média do valor gasto com as viagens é 250// F - Não tem esse espaço entre a string e o resultado
+A média do valor gasto com as viagens é// F - Não tem <br> no parametro que foi passado
+250
+
+--------------------------------
+Qual das opções abaixo exibe na tela o número 182?
+
+<meta charset="UTF-8">
+<script>
+    document.write(18 + 2);
+</script>
+//F - o parametro recebeu um calculo, portanto, irá apresentar o resultado = 20
+
+<meta charset="UTF-8">
+<script>
+    document.write("18 + 2");
+</script>
+//F - o parametro recebeu um string portanto irá apresentar o texto = 18 + 2
+
+<meta charset="UTF-8">
+<script>
+    document.write("18" + "2");
+</script>
+//V - o parametro recebeu a soma de duas strings, portanto irá concatenar = 182
+
+------------------------------------
+A) Funciona - Irá concatenar = 12 anos
+<meta charset="UTF-8">
+<script>
+    document.write(12 + " anos");
+</script>COPIAR CÓDIGO
+
+B) Não funciona - não irá identificar o parametro passado, pois, a string não foi colocada entre parenteses
+<meta charset="UTF-8">
+<script>
+    document.write(Minha idade é + 12);
+</script>COPIAR CÓDIGO
+
+C) Funciona - Irá concatenar = Média calculada 20
+<meta charset="UTF-8">
+<script>
+    document.write("Média calculada " + 20);
+</script>COPIAR CÓDIGO
+
+D)Funciona - irá somar = 30
+<meta charset="UTF-8">
+<script>
+    document.write(10 + 20);
+</script>COPIAR CÓDIGO
+Podemos dizer que:
+
+A,B,C,D são exemplos de concatenação //F - B não funfa e D soma
+A, D não são exemplos de concatenação //F - D soma
+A, C, D são exemplos de concatenação //F - D soma
+A, C são exemplos de concatenação //V - A e C concatenaram
+
+----------------------------
+Temos o seguinte código:
+
+<meta charset="UTF-8">
+<script>
+    document.write("A" + "B" + 20 + 10 + "C" + (5 + 10) + "D");
+</script>
+Resultado = AB2010C15D
+
+----------------------------
+Amanda esteve muito ocupada e não teve tempo de finalizar um trabalho em grupo. Seus amigos, desesperados, precisam terminar o programa para conseguirem um ponto que pode ajudá-los a passar na matéria. O código era o seguinte:
+
+<meta charset="UTF-8">
+<script>
+    var n= Number(window.prompt("Qual a nota de 1 a 5?"));
+
+    document.write("O resultado da fórmula é : " + n * (10 / 20)  );
+</script>
+
+Bastaria declarar o valor da variavel n e tudo certo
+
+----------------------------
+Sílvia escreveu o seguinte código:
+
+<meta charset="UTF-8">
+<script>
+    var minhaIdade = 20;
+
+    document.write("Eu nasci em " + (2016 - minhaidade) );
+</script>
+
+----------------------------
+Sílvia escreveu o seguinte código:
+
+<meta charset="UTF-8">
+<script>
+    var minhaIdade = 20;
+
+    document.write("Eu nasci em " + (2016 - minhaidade) );
+</script>
+
+O código de Sílvia não funciona. Qual é o problema?
+A var minhaIdade tem uma letra I maiuscula que ela não colocou no código.
+
+-------------------------------------
+Marcela ficou chateada porque em sua prova de "Fundamentos da programação" marcou a opção errada para a reatribuição do valor de uma variável.
+
+Faça diferente, marque a opção que reatribui corretamente o valor da variável mes:
+
+<meta charset="UTF-8">
+
+<script>
+    var mes = 6;
+    document.write("Realizei a prova no mês " + mes + ".");
+    mes = 7;
+    document.write("Não, desculpe, realizei a prova no mês " + mes + ".");
+</script>
+V - VARIAVEL FOI DECLARADA E DEPOIS REATRIBUIDA SEM REPETIÇÃO DO var 
+
+<meta charset="UTF-8">
+
+<script>
+    var mes = 6;
+    document.write("Realizei a prova no mês " + mes + ".");
+    var mes = 7;
+    document.write("Não, desculpe, realizei a prova no mês " + mes + ".");
+</script>
+F - NÃO PRECISA REPETIR O VAR
+
+<meta charset="UTF-8">
+
+<script>
+    var mes = 6;
+    document.write("Realizei a prova no mês " + mes + ".");
+</script>
+F - NÃO FOI FEITA A REATRIBUIÇÃO
+
+----------------------------------------------------------
+
+Moacir escreveu o seguinte código que exibe na tela o resultado da tabuada de 5!
+
+<meta charset="UTF-8">
+<script>
+    document.write("5 vezes 1 é " + 5 * 1+ "<br>");
+    document.write("5 vezes 2 é " + 5 * 2+ "<br>");
+    document.write("5 vezes 3 é " + 5 * 3+ "<br>");
+    document.write("5 vezes 4 é " + 5 * 4+ "<br>");
+    document.write("5 vezes 5 é " + 5 * 5+ "<br>");
+    document.write("5 vezes 6 é " + 5 * 6+ "<br>");
+    document.write("5 vezes 7 é " + 5 * 7+ "<br>");
+    document.write("5 vezes 8 é " + 5 * 8+ "<br>");
+    document.write("5 vezes 9 é " + 5 * 9+ "<br>");
+    document.write("5 vezes 10 é " + 5 * 10+ "<br>");
+</script>COPIAR CÓDIGO
+E se quisermos a tabuada do 8? Teremos que fazer a alteração de valores em diversos lugares! O que podemos fazer para guardar o valor da tabuada que desejamos calcular?
+
+<meta charset="UTF-8">
+<script>
+    let numTabuada=5;
+
+    document.write("5 vezes 1 é " + 5 * 1+ "<br>");
+    document.write("5 vezes 2 é " + 5 * 2+ "<br>");
+    document.write("5 vezes 3 é " + 5 * 3+ "<br>");
+    document.write("5 vezes 4 é " + 5 * 4+ "<br>");
+    document.write("5 vezes 5 é " + 5 * 5+ "<br>");
+    document.write("5 vezes 6 é " + 5 * 6+ "<br>");
+    document.write("5 vezes 7 é " + 5 * 7+ "<br>");
+    document.write("5 vezes 8 é " + 5 * 8+ "<br>");
+    document.write("5 vezes 9 é " + 5 * 9+ "<br>");
+    document.write("5 vezes 10 é " + 5 * 10+ "<br>");
+</script>
+
+-----------------------------------
+O detetive Roy, investigando os arquivos de um hacker, encontrou o seguinte programa:
+
+<meta charset="UTF-8">
+<script>
+    var idadeLinda = 12 ;
+    var idadeGuaraciara = 15 ;
+    var idadePerola = 13 ;
+    var mediaIdade= (idadeLinda + idadeGuaraciara + idadePerola) / 3 ;
+
+    document.write("A média das idades é " + mediaIdade + " anos.");
+
+</script>
+
+-----------------------------------
+Roy, depois de ter muito contato com a programação, acabou se tornando programador.
+
+O seguinte código o fez refletir bastante:
+
+<meta charset="UTF-8">
+<script>
+
+    var idadeLinda = 12;
+    var idadeGuaraciara = 15;
+    var idadePerola = 13;
+    Var somaIdades = (idadeLinda + idadeGuaraciara + idadePerola);
+
+    document.write(somaIdades / 3);
+</script>
+
+--------------------------------------
+Simone, em um primeiro teste de programação realizou a seguinte operação:
+
+<meta charset="UTF-8">
+<script>
+    document.write("Resultado: " + 10/3);
+</script>
+
+O resultado impresso na tela foi Resultado: 3.3333333333333335!
+
+Qual das opções abaixo exibe o código de Simone corretamente alterado - fazendo uso da instrução Math.round - para arredondar o resultado exibindo-o na tela?
+
+<meta charset="UTF-8">
+<script>
+    document.write("Resultado " + Math.round(10/3);
+</script>
+F - NÃO FECHOU O PRIMEIRO PARENTESES
+
+<meta charset="UTF-8">
+<script>
+    document.write("Resultado " + Math.round(10/3) );
+</script>
+V -  A ESCRITA E PARENTAÇÃO ESTÃO CORRETOS
+
+<meta charset="UTF-8">
+<script>
+    document.write("Resultado " Math.round(10/3) );
+</script>
+F - NÃO TEM O + QUE IRÁ JUNTAR (CONCATENAR) TEXTO + RESULTADO ARREDONDADO
+
+-----------------------------------------
+Temos o seguinte código criado por Gerônimo:
+
+<meta charset="UTF-8">
+<script>
+    var IDADE1 = 10;
+    var IDADE2 = "20";
+    var IDADE3 = 12;
+
+    document.write("A média das idades é <br>");
+    document.write( (IDADE1 + IDADE2 + IDADE3) / 3);
+</script>
+
+RESULTADO DO CÓDIGO = 102012 / 3 = "texto" + 34004
+
+Temos as seguintes afirmações sobre o código:
+
+A) Ao rodar o programa o resultado da média das idades é 14.
+F - Como o programa entende a idade 2 como string, ele irá concatenar as 3 idades formando 102012 e depois fará a divisão
+
+B) As variáveis foram declaradas em letras maiúsculas e, em JavaScript, isso causará um erro.
+F - Escrever em minúsculo é boa prática, mas, "entrar no elevador molhado não impede que o elevador desça".
+
+C) O valor de IDADE2 nos causará problemas no cálculo da média das idades.
+V - Como ele está em string e não numeral, basta corrigí-lo para que o calculo ocorra perfeitamente.
+
+-----------------------------------------
+Leia as seguintes afirmativas sobre funções:
+
+A) Precisam ser declaradas usando a palavra especial function.
+V - Como o código não conhece a função antes de ser declarada, é necessário que isso seja feito para ele passar a conhecé-la
+
+B) O uso de () da declaração de uma função é opcional.
+F - o uso de () é obrigatório para que ela seja executada
+
+C) Toda função possui um bloco, que é caracterizado pelo uso de { e }.
+V - é dentro do bloco onde iremos colocar as instruções da função {definir o que ela faz}
+
+D) Uma ou mais instruções podem ficar dentro do bloco de uma função.
+V - um bloco de função irá comportar quantas instruções forem necessárias.
+
+Podemos dizer que:
+
+-----------------------------------------
+Leia a seguinte lista de funções:
+
+<meta charset="UTF-8">
+<script>
+
+    function somaDoisNumeros() {
+
+        document.write(10 + 20);
+    }
+V - Está correta, a declaração possui function, nomeVerbal, abreFechaParametros, abreFechaBloco, instruções corretas. 
+
+    function multiplicaDoisNumeros {
+
+        document.write(10 * 20);
+    }
+
+F - Está incorreta, a NÃO abreFechaParametros ()
+
+    function divideDoisNumeros () 
+        document.write(10/20);
+
+F - Está incorreta, a function NÃO abreFechaBloco (declarar bloco)
+
+
+</script>
+Das funções declaradas acima, podemos afirmar que:
+
+-----------------------------------------
+Rafaela, estudante de programação, quis fazer uma brincadeira com sua amiga Bruna. Ela criou um programa que, ao ser aberto, exibe 9 alertas. Isso fará com que sua amiga clique 1 vez em cada um deles e fique entediada(9 vezes ao todo). Cada alerta é uma mensagem brincando com ela. Contudo, para fazer bonito, ela colocou as 9 instruções dentro de uma função que chamou fazPegadinha:
+
+<meta charset="UTF-8">
+<script>
+    function fazPegadinha() {
+        alert("Olá");
+        alert("amiga!");
+        alert("Tá");
+        alert("bastante");
+        alert("entediada?");
+        alert("Em ficar");
+        alert("Clicando em");
+        alert("Ok");
+        alert("né?");
+    }
+</script>COPIAR CÓDIGO
+Rafaela, ansiosa para ver a reação de sua amiga Bruna, ao ver o programa aberto ficou surpresa. Pois, nenhum dos nove alertas foi exibido na tela.
+
+Por que a armadilha de Rafaela não funcionou e como você consertaria o código dela para que os 9 alertas fossem exibidos?
+
+R - Não funcionou porquem para ser executada, uma função, requer que ela seja chamada = fazPegadinha();
+Basta inserir o fazPegadinha(); no código e ele funcionará, mas para um bom uso da function seria:
+
+<script>
+function fazPegadinha(conteudo) {
+    alert(conteudo);
+    }
+
+    fazPegadinha("olá");
+    fazPegadinha("amiga!");
+    fazPegadinha("Tá");
+    fazPegadinha("bastante");
+    fazPegadinha("entediada?");
+    fazPegadinha("Em ficar");
+    fazPegadinha("Clicando em");
+    fazPegadinha("Ok");
+    fazPegadinha("né?");
+</script>
+
+-----------------------------------------
+Basta alterar a função pulaLinha para que ela pule duas linhas
+
+<meta charset="UTF-8">
+<script>
+    function pulaLinha() {
+
+        document.write("<br><br>");
+    }
+
+    var titulo = "Bem-vindo ao meu programa!";
+
+    document.write("<h1>" + titulo + "</h1>");
+
+    pulaLinha();
+
+    document.write("Vocês não sabem o que tive que aprender para fazer isso!");
+
+    pulaLinha();
+
+    document.write("Contudo, assistindo os vídeos e estudando ...");
+
+    pulaLinha();
+
+    document.write("Eu vou mais longe!");
+
+    pulaLinha();
+</script>COPIAR CÓDIGO
+Nada também o impede de chamar duas vezes document.write("<br>") dentro da função pulaLinha.
+
+-----------------------------------------
+Tuane tem o hábito de colocar sempre três asteriscos antes e depois das mensagens de alerta. Vejamos um exemplo de seu código:
+
+<meta charset="UTF-8">
+<script>
+    var idade1 = 10;
+    var idade2 = 20;
+    var idade3 = 30;
+    var totalIdades = idade1 + idade2 + idade3;
+    var mediaIdades = totalIdades/3;
+    alert("***Total de idades é " + totalIdades + "***");
+    alert("***A média das idades é " +  mediaIdades + "***");
+</script>COPIAR CÓDIGO
+Qual das opções abaixo cria corretamente a função exibeAlerta, que recebe como parâmetro o texto que queremos exibir no alerta, e que realiza a concatenação com os três asteriscos?
+
+<meta charset="UTF-8">
+<script>
+    function exibeAlerta(mensagem) {
+        alert("***" + msg + "***");
+    }
+F - NÃO SE PODE TER PARAMETRO ESCRITO DE UM JEITO NA FUNCTION E DIFERENTE DENTRO DELA
+
+<meta charset="UTF-8">
+<script>
+    function exibeAlerta(mensagem) {
+        alert("***" + mensagem + "***");
+    }
+
+    var idade1 = 10;
+    var idade2 = 20;
+    var idade3 = 30;
+    var totalIdades = idade1 + idade2 + idade3;
+    var mediaIdades = totalIdades/3;
+
+    exibeAlerta("Total de idades é " + totalIdades);
+    exibeAlerta("A média das idades é " +  mediaIdades);
+</script>
+V - ESSE ESTARÁ FUNCIONANDO POIS TUDO FOI DECLARADO CORRETAMENTE
+
+<meta charset="UTF-8">
+<script>
+    function exibeAlerta() {
+        alert("***" + mensagem + "***");
+    }
+F - NÃO FOI DEFINIDO UM PARAMETRO
+-----------------------------------------
+Ricardo mostrou seu programa para Pedro. Assim que Pedro abriu o programa ele viu o seguinte resultado na tela:
+
+**************************************************
+BEM-VINDO AO MEU PROGRAMA
+**************************************************
+ELE REALMENTE FUNCIONA
+**************************************************
+EU USEI FUNÇÃO PARA FAZER ISSOCOPIAR CÓDIGO
+O problema é que Ricardo não quis mostrar para Pedro como o programa foi feito, mas ele deu uma pista quando exibiu a informação na tela: ele usou uma função para escrever cada linha.
+
+Qual das opções abaixo possui um código que ao ser executado, possui a mesma saída que Pedro viu no programa de Ricardo?
+
+A - F - IRA CONCATENAR O FIM DA PRIMEIRA FRASE COM *****
+B - V - IRÁ RESULTAR NO CONTEÚDO CORRETO
+C - F - IRA CONCATENAR O INÍCIO DAS FRASES COM ****
+-----------------------------------------
+Qual das opções abaixo possui o cálculo do IMC aplicado corretamente?
+
+Alternativa correta
+var peso = 75;
+var altura = 1.71;
+var imc = peso / ( altura * altura );
+V - CORRETAMENTE CALCULADO
+
+Alternativa correta
+var peso = 75;
+var imc = peso / ( altura * altura );
+F - A VARIAVEL ALTURA NÃO FOI DELCARADA
+
+Alternativa correta
+var peso = 75;
+var altura = 1.71;
+var imc = peso /  altura * altura;
+F - PRECISAMOS USAR PARENTESES PARA IDENFICAR O QUE OBRIGATORIAMENTE SERÁ CALCULADO PRIMEIRO
+-----------------------------------------
+
+Helena teve a ideia de criar a função somaDoisNumeros. Esta função precisa receber dois parâmetros e imprimir como resultado a soma desses dois números.
+
+Qual das opções declara e chama corretamente esta função?
+
+Alternativa correta
+<meta charset="UTF-8">
+
+<script>
+
+    function pulaLinha() {
+        document.write("<br>");
+    }
+
+    function mostra(frase) {
+        document.write(frase);
+        pulaLinha();
+    }
+
+    function somaDoisNumeros(numero1, numero2) {
+        mostra("A soma dos dois números é : " + (numero1 + numero2) );
+    }
+
+    somaDoisNumeros(10, 40);
+</script>
+
+Alternativa correta
+<meta charset="UTF-8">
+V - TUDO FOI DEVIDAMENTE DECLARADO E CALCULADO
+
+<script>
+
+    function pulaLinha() {
+        document.write("<br>");
+    }
+
+    function mostra(frase) {
+        document.write(frase);
+        pulaLinha();
+    }
+
+    function somaDoisNumeros(n1, n2) {
+        mostra("A soma dos dois números é : " + (numero1 + numero2) );
+    }
+
+    somaDoisNumeros(10, 40);
+</script>
+F - OS PARAMETROS DECLARADOS NA FUNCTION NÃO SÃO COERENTES COM OS USADOS NA MESMA
+
+<meta charset="UTF-8">
+
+<script>
+
+    function pulaLinha() {
+        document.write("<br>");
+    }
+
+    function mostra(frase) {
+        document.write(frase);
+        pulaLinha();
+    }
+
+    function somaDoisNumeros() {
+        mostra("A soma dos dois números é : " + (numero1 + numero2) );
+    }
+
+    somaDoisNumeros(10, 40);
+</script>
+F - NENHUM PARAMETRO FOI DECLARADO.
+-----------------------------------------
+function geraCodigo(letra, numero1, numero2) {
+
+    return "GH1022";
+}
+V - NÃO IMPORTA O PARAMETRO RECEBIDO, O return É FIXO "GH1022"
+
+function geraCodigo(letra, numero1, numero2) {
+
+    var codigo = "GH1022";
+}
+F - APENAS DEFINIU UMA VAR MAS NÃO RETORNA NADA
+
+function geraCodigo(letra, numero1, numero2) {
+
+    return codigo;
+}
+F - NÃO RETORNA NADA POIS O RETORNO É ALGO INDEFINIDO, UMA VAR SEM VALOR.
+-----------------------------------------
+Veja a seguinte declaração de função:
+
+function funcaoQualquer() {
+
+    var n1 = 10;
+    var n2 = 20;
+    var n3 = 30;
+}COPIAR CÓDIGO
+Queremos guardar o retorno da função em uma variável:
+
+var retorno = funcaoQualquer();COPIAR CÓDIGO
+Sabemos que do jeito que está, o valor de retorno será undefined. Qual das opções abaixo altera corretamente o código para que a função retorne 20, ou seja, para que o valor da variável retorno seja 20?
+
+Alternativa correta
+function funcaoQualquer() {
+
+    var n1 = 10;
+    var n2 = 20;
+    var n3 = 30;
+
+    return n3;
+}
+F - IRÁ RETORNAR O VALOR DA n3 = 30
+
+function funcaoQualquer() {
+
+    var n1 = 10;
+    var n3 = 30;
+    var n2 = 20;
+}
+F - NÃO RETORNA NADA
+
+
+function funcaoQualquer() {
+
+    var n1 = 10;
+    var n2 = 20;
+    var n3 = 30;
+
+    return n2;
+}
+V - IRA RETORNAR O VALOR DA n2 = 20
+-----------------------------------------
+Laércio criou a função calculaImc:
+
+<meta charset="UTF-8">
+<script>
+    function pulaLinha() {
+        document.write("<br>");
+    }
+
+    function mostra(frase) {
+        document.write(frase);
+        pulaLinha();
+    }
+
+    function calculaImc(altura, peso) {
+
+        var imc = peso / (altura * altura);
+    }
+
+    var imcCalculado = calculaImc(1.77, 75);
+    mostra("O meu IMC é : " + imcCalculado);
+</script>COPIAR CÓDIGO
+Contudo, o que está escrito no mundo HTML é o texto "O meu IMC é undefined".
+
+Como alterar o código de Laércio para que o retorno da função calculaImc seja para a variável imcCalculado?
+
+-----------------------------------------
+Laércio criou a função calculaImc:
+
+<meta charset="UTF-8">
+<script>
+    function pulaLinha() {
+        document.write("<br>");
+    }
+
+    function mostra(frase) {
+        document.write(frase);
+        pulaLinha();
+    }
+
+    function calculaImc(altura, peso) {
+
+        var imc = peso / (altura * altura);
+    }
+
+    var imcCalculado = calculaImc(1.77, 75);
+    mostra("O meu IMC é : " + imcCalculado);
+</script>COPIAR CÓDIGO
+Contudo, o que está escrito no mundo HTML é o texto "O meu IMC é undefined".
+
+Como alterar o código de Laércio para que o retorno da função calculaImc seja para a variável imcCalculado?
+
+R - É NECESSÁRIO COLOCAR DENTRO DA function O RETURN DA VARIA IMC
+
+-----------------------------------------
+Kellen criou a função calculaImc durante suas aulas de lógica de programação:
+
+<meta charset="UTF-8">
+
+<script>
+    function pulaLinha() {
+        document.write("<br>");
+    }
+
+    function mostra(frase) {
+        document.write(frase);
+    }
+
+    function calculaImc(altura, peso) {
+
+        return peso / ( altura * altura );
+    }
+</script>COPIAR CÓDIGO
+Contudo, ela causou muita polêmica quando foi usar a função. Ela fez o seguinte:
+
+    mostra("O meu IMC é " + calculaImc(1.63, 48));COPIAR CÓDIGO
+Alguns alunos disseram que o código não funcionaria e que ela deveria fazer da seguinte forma:
+
+    var imcCalculado = calculaImc(1.63, 48);
+    mostra("O meu IMC é " + imcCalculado);COPIAR CÓDIGO
+Afinal, o código que Kellen escreveu funciona ou não?
+
+FUNCIONA - ela não é obrigada a transformar o valor em uma variavel para aplicar em sua expressão. irá concaternar a string + o return do calculaImc()
+-----------------------------------------
+Temos as seguintes afirmativas sobre a função prompt.
+
+A) Ela é uma função que recebe parâmetro e não possui retorno.
+F - Ela recebe um parâmetro e possui um retorno SIM
+
+B) Ela é uma função que não recebe parâmetro e possui retorno.
+F - Ela recebe SIM um parâmetro
+
+C) Ela é uma função que nem recebe parâmetro e nem possui retorno.
+F - óbvio
+
+D) Ela é uma função que recebe parâmetro e possui retorno.
+V - Recebe um parâmetro e possu retorno
+
+Qual das afirmações acima é verdadeira?
+
+-----------------------------------------
+Se quisermos exibir um pop-up, que mostre uma pergunta e permita ao usuário entrar com um valor, fazemos uso da função prompt.
+
+Usando a função prompt, qual das opções abaixo lê dois números, do teclado, e exibe a multiplicação de um por outro para o usuário?
+
+<meta charset="UTF-8">
+
+<script>
+    function pulaLinha() {
+
+        document.write("<br>");
+    }
+
+    function mostra(frase) {
+        document.write(frase);
+        pulaLinha();
+    }
+
+    var numero1 = prompt("Digite o primeiro número");
+    var numero2 = prompt("Digite o segundo número");
+
+    mostra("O valor de " + numero1 + " vezes " + numero2 + " é: " + (numero1 * numero2));
+V - Pefeito, recebe os 2 valores pelo prompt dentro de uma var e utilizar eles dentro da function mostra()
+
+</script>
+
+<meta charset="UTF-8">
+
+<script>
+    function pulaLinha() {
+
+        document.write("<br>");
+    }
+
+    function mostra(frase) {
+        document.write(frase);
+        pulaLinha();
+    }
+
+    var numero1 = prompt("Digite o primeiro número");
+    var numero1 = prompt("Digite o segundo número");
+
+    mostra("O valor de " + numero1 + " vezes " + numero2 + " é: " + (numero1 + numero2));
+
+</script>
+F - Além de declarar a mesma variavel 2 vzs ainda utilizar no mostra() a variavel 2 que não existe
+
+<meta charset="UTF-8">
+
+<script>
+    function pulaLinha() {
+
+        document.write("<br>");
+    }
+
+    function mostra(frase) {
+        document.write(frase);
+        pulaLinha();
+    }
+
+    prompt("Digite o primeiro número");
+    prompt("Digite o segundo número");
+
+    mostra("O valor de " + numero1 + " vezes " + numero2 + " é: " + (numero1 * numero2));
+
+</script>
+F - Recebe os valores ma apenas os guarda, não transforma em variavel e portanto não o utiliza. Além de declarar 2 variaveis inexistentes no calculo
+-----------------------------------------
+Temos o seguinte programa:
+
+<meta charset="UTF-8">
+
+<script>
+    function pulaLinha() {
+
+        document.write("<br>");
+    }
+
+    function mostra(frase) {
+        document.write(frase);
+        pulaLinha();
+    }
+
+    function a(numero1, numero2) {
+        return numero1 + numero2;
+    }
+
+    function b(numero1, numero2) {
+        return numero1 / numero2;
+    }
+
+    var resultado = a(10,20) + b(30,2);
+
+    mostra(resultado);
+</script>COPIAR CÓDIGO
+Qual valor será retornado?
+
+R -     var resultado = a(10 + 20) + b(30/2);
+                        = 30 + 15
+                            = 45
+
+-----------------------------------------
+Temos o seguinte código:
+
+<meta charset="UTF-8">
+
+<script>
+    function pulaLinha() {
+
+        document.write("<br>");
+    }
+
+    function mostra(frase) {
+        document.write(frase);
+        pulaLinha();
+    }
+
+    function a(texto) {
+
+        return "(" + texto + ")";
+    }
+
+    function b(texto) {
+
+        return "@" + texto + "@";
+    }
+
+    function c(nome, sobrenome) {
+
+        return b(nome + " " + a(sobrenome));
+
+    }
+
+    var resultado = c("Flávio", "Almeida");
+
+    mostra(resultado);
+
+</script>COPIAR CÓDIGO
+O que será exibido na tela com a instrução mostra(resultado)?
+
+R - resultado = "@" + "Flávio" + " " + "(" + "Almeida" + ")" + "@"
+                    @Flávio (Almeida)@
+-----------------------------------------
+Goretti criou um programa simples para somar o total de convidados de sua festa com o total de convidados VIPs. Com certeza ela poderia utilizar a calculadora, mas achou relevante para exercitar seus conhecimentos elaborar um programa. Então, Goretti escreveu o seguinte:
+
+<meta charset="UTF-8">
+
+<script>
+    function pulaLinha() {
+        document.write("<br>");
+    }
+
+    function mostra(frase) {
+        document.write(frase);
+        pulaLinha();
+    }
+
+    var convidados = prompt("Número de convidados");
+    var vips = prompt("Número de convidados VIP's");
+
+    var total = convidados + vips;
+
+    mostra("O total de convidados é " + total);
+
+</script>COPIAR CÓDIGO
+Veja que ela usou a função prompt() para ler a quantidade de convidados e vips. Se ela entrar com 10 convidados e 7 vips, qual será o resultado exibido na tela?
+
+17
+F - o JavaScript identifica os resultados como string, até que isso seja alterado, portanto o resultado é uma concatenação de strings(textos)
+
+107
+V - Concatenação das strings "10" + "7"
+
+Nada é exibido, dá um erro.
+F - Esse é um erro de lógica portanto os sistemas não conseguem entender/saber a lógica esperada para te avisar
+-----------------------------------------
+No exercício anterior, vimos que o código de Goretti realiza a concatenação de dois números lidos pelo teclado.
+
+<meta charset="UTF-8">
+
+<script>
+    function pulaLinha() {
+        document.write("<br>");
+    }
+
+    function mostra(frase) {
+        document.write(frase);
+        pulaLinha();
+    }
+
+    var convidados = prompt("Número de convidados");
+    var vips = prompt("Número de convidados VIP's");
+
+    var total = convidados + vips;
+
+    mostra("O total de convidados é " + total);
+
+</script>COPIAR CÓDIGO
+Qual das opções abaixo possui o código anterior alterado para que calcule corretamente o total de convidados?
+
+<meta charset="UTF-8">
+
+<script>
+    function pulaLinha() {
+        document.write("<br>");
+    }
+
+    function mostra(frase) {
+        document.write(frase);
+        pulaLinha();
+    }
+
+    var convidados = prompt("Número de convidados");
+    var vips = prompt("Número de convidados VIP's");
+
+    var total = parseInt(convidados + vips);
+
+    mostra("O total de convidados é " + total);
+
+</script>
+F - estamos falando que a resultado da concatenação é um número inteiro, portanto voltamos a ter 107 como número
+
+
+<meta charset="UTF-8">
+
+<script>
+    function pulaLinha() {
+        document.write("<br>");
+    }
+
+    function mostra(frase) {
+        document.write(frase);
+        pulaLinha();
+    }
+
+    var convidados = parseInt(prompt("Número de convidados"));
+    var vips = prompt("Número de convidados VIP's");
+
+    var total = convidados + vips;
+
+    mostra("O total de convidados é " + total);
+
+</script>
+F - Tranformamos apenas os convidados em números, quando somar o total, vai concatenar 10 + "7" = 107
+
+<meta charset="UTF-8">
+
+<script>
+    function pulaLinha() {
+        document.write("<br>");
+    }
+
+    function mostra(frase) {
+        document.write(frase);
+        pulaLinha();
+    }
+
+    var convidados = prompt(parseInt("Número de convidados"));
+    var vips = prompt(parseInt("Número de convidados VIP's"));
+
+    var total = convidados + vips;
+
+    mostra("O total de convidados é " + total);
+
+</script>
+F - Vai apresentar um Erro - parseInt está incorreto, recebe um texto, mas o expero é um número logo = NaN
+
+<meta charset="UTF-8">
+
+<script>
+    function pulaLinha() {
+        document.write("<br>");
+    }
+
+    function mostra(frase) {
+        document.write(frase);
+        pulaLinha();
+    }
+
+    var convidados = parseInt(prompt("Número de convidados"));
+    var vips = parseInt(prompt("Número de convidados VIP's"));
+
+    var total = convidados + vips;
+
+    mostra("O total de convidados é " + total);
+
+</script>
+V - Corrige o problema transformando o valor obtido no prompt em parseInt 
+
+-----------------------------------------
+Temos as seguintes operações
+
+var a = parseInt("10");
+var b = parseInt("Calopsita");
+var c = parseInt(10);COPIAR CÓDIGO
+Podemos dizer que:
+
+A variável `a` recebe o número 10 retornado por `parseInt`.  VERDADE
+A variável `b` recebe `NaN` (not a number) retornado por `parseInt`. VERDADE
+A variável `c` recebe `NaN` retornado por `parseInt`. FALSO - retona um inteiro = 10
+
+A variável `a` recebe o número 10 retornado por `parseInt`. VERDADE
+A variável `b` recebe `NaN` (not a number) retornado por `parseInt`. VERDADE
+A variável `c` recebe 10, número, retornado por `parseInt`. VERDADE
+
+Alternativa correta
+A variável `a` recebe a string "10" retornado por `parseInt`. FALSO - retona um inteiro = 10
+A variável `b` recebe `NaN` (not a number) retornado por `parseInt`. VERDADE
+A variável `c` recebe 10, número, retornado por `parseInt`. VERDADE
+-----------------------------------------
+Sabemos que operações lógicas podem resultar em true (verdadeiro) ou false (falso). Sendo assim, temos as seguintes operações:
+
+a) 1 == 1 true
+b) 10 < 11 true 
+c) 1 >= 1 true
+d) 2 <= 1 false - 2 naõ é nem menor nem igual a 1
+e) 9 > 8 true
+-----------------------------------------
+Temos a declaração da seguinte variável:
+
+var numero = 10;COPIAR CÓDIGO
+Agora, temos as seguintes condições:
+
+A)
+
+if(numero >= 2 && numero < 12) {
+
+    alert("ENTROU!");
+}
+
+V - true
+
+B)
+
+if(numero >= 2 &&  < 12) {
+
+    alert("ENTROU!");
+}
+
+F - na segunda regra não foi informado quem deve ser < 12
+
+C)
+
+if(numero >= 10) {
+
+    alert("ENTROU!");
+}
+V - true
+
+-----------------------------------------
+Qual das opções abaixo usa corretamente a condição if e else ?
+
+Alternativa correta
+var senha = prompt("Entre com sua senha");
+
+if(senha == "calopsitaazul") {
+
+    alert("Acesso liberado!");
+} else {
+
+    alert("Acesso negado!");
+}
+V - Declaração e parametros estão corretos
+
+var senha = prompt("Entre com sua senha");
+
+if senha == "calopsitaazul" {
+
+    alert("Acesso liberado!");
+} else {
+
+    alert("Acesso negado!");
+}
+F - O parametro não está correto, está faltando o parenteses
+
+var senha = prompt("Entre com sua senha");
+
+if(senha == "calopsitaazul") {
+
+    alert("Acesso liberado!");
+else {
+
+    alert("Acesso negado!");
+}
+F - O bloco não foi fechado está faltando uma chave }
+-----------------------------------------
+Braga é estudante de química que tem interesse por programação. Ele entende que a programação pode ajudá-lo em suas pesquisas e, assim como qualquer estudante, resolveu fazer alguns testes.
+
+O estudante criou um programa que pergunta a quantidade de carbono de duas substâncias. Para a segunda substância, ele fará um ajuste somando o número 2 com o valor lido. Depois de feito o ajuste, o programa compara se a quantidade de carbono da primeira substância é igual ao do segundo e avisa ao usuário se forem iguais.
+
+<meta charset="UTF-8">
+
+<script>
+
+    function pulaLinha() {
+        document.write("<br>");
+    }
+
+    function mostra(frase) {
+        document.write(frase);
+        pulaLinha();
+    }
+
+    var quantidadeCarbono1 = parseInt(prompt("Quantidade de carbono substância 1"));
+    var quantidadeCarbono2 = parseInt(prompt("Quantidade de carbono substância 2"));
+
+    quantidadeCarbono2 = quantidadeCarbono2 + 2;
+
+    if(quantidadeCarbono1 = quantidadeCarbono2 ) {
+
+        mostra("Acho que são substâncias parecidas");
+    } else {
+
+        mostra("São substâncias bem diferentes");
+    }
+
+    PARA FAZER COMPARAÇÃO DOS VALORES PRECISA DE == DOIS SIMBOLOS DE IGUAL
+-----------------------------------------
+Temos o seguinte programa:
+
+<meta charset="UTF-8">
+
+<script>
+    function pulaLinha() {
+        document.write("<br>");
+    }
+
+    function mostra(frase) {
+        document.write(frase);
+        pulaLinha();
+    }
+
+var idade = parseInt(prompt("Qual é sua idade?"));
+var temCarteira = prompt("Tem carteira? Responda s ou n");
+
+    if(idade >= 18 && temCarteira =="s"){
+        mostra("Pode dirigir");
+        }else{
+            mostra("Não pode dirigir");
+            }
+</script>
+Este programa, de acordo com a resposta do usuário, deve exibir a mensagem "Pode dirigir" ou "Não pode dirigir". Lembre-se que é permitido dirigir ao indivíduo com 18 anos ou mais e que também possua carteira de motorista.
+
+Altere o programa para que ele responda com inteligência!
+-----------------------------------------
+<meta charset="UTF-8">
+<script>
+
+    function pulaLinha() {
+
+        document.write("<br>");
+    }
+
+    function mostra(frase) {
+
+        document.write(frase);
+        pulaLinha();
+    }
+
+    function sorteia(n) {
+
+        return Math.round(Math.random() * n);
+    }    
+
+    var numeroPensado = sorteia(10);
+
+
+     var chute = parseInt(prompt("Já pensei. Qual você acha que é?"));
+
+    if(chute == numeroPensado) {
+
+        mostra("Uau! Você acertou, pois eu pensei no " + numeroPensado);
+    } else {
+
+        if(chute > numeroPensado) {
+
+            mostra("Você errou! Seu chute é maior que o número pensado!");
+
+        } else {
+
+            mostra("Você errou! Seu chute é menor que o número pensado!");
+        }
+
+    }
+</script>
+-----------------------------------------
+<meta charset="UTF-8">
+<script>
+
+    // funções pulaLinha, mostra e sorteia omitidas
+
+    var numeroPensado = sorteia();
+
+    var chute = parseInt(prompt("Já pensei. Qual você acha que é?"));
+
+    if(chute == numeroPensado) {
+
+        mostra("Uau! Você acertou, pois eu pensei no " + numeroPensado);
+    } else {
+
+        var contador = 1;
+
+        while( contador <= 10 ) {
+
+            mostra("Já era, você errou!");
+            contador = contador + 1;
+        }
+
+    }
+</script>
+USAR O FOR SERIA MAIS INTERESSANTE
+-----------------------------------------
+Francisco assistiu aos vídeos do treinamento de "Lógica de Programação I" e criou um programa que exibe todos os anos em que ocorreram Copa do Mundo desde 1930 até uma data limite. A data limite quem fornece é o usuário, a informação é requisitada por meio da função prompt() e a conversão do valor digitado para um número é feito pela função parseInt(). Observe o código de Francisco:
+
+<meta charset="UTF-8">
+
+<script>
+
+    function pulaLinha() {
+        document.write("<br>");
+    }
+
+    function mostra(frase) {
+
+        document.write(frase);
+        pulaLinha();
+    }
+
+    var anoCopa = 1930;
+    var limite = parseInt(prompt("Qual é o ano limite?"));
+
+    while(anoCopa <= limite) {
+
+        mostra(anoCopa + " tem copa!");
+    }
+
+    anoCopa = anoCopa + 4;
+
+    mostra("Ufa! Esses foram os anos de copa até " + limite);
+</script>
+BASTA COLOCAR O SOMA 4 NO ANO COPA DENTRO DO WHILE PARA QUE ELE ALTERE OS PARAMETROS DE CALCULO SEMPRE QUE RODAR
+-----------------------------------------
+var idade = parseInt(prompt("Digite sua idade"));
+
+while( isNaN(idade) ) {
+    idade = parseInt(prompt("Digite sua idade"));    
+}
+
+alert(idade);
+-----------------------------------------
+r( var contador = 1; contador <= 10; contador = contador + 1 ) {
+    alert("Contador atual: " + contador);
+}
+V - PARAMETROS CORRETOS
+
+for( var contador = 1; contador = contador + 1; contador <= 10 ) {
+    alert("Contador atual: " + contador);
+}
+F - CONDIÇÃO E EXPRESSÃO FINAL ESTÃO EM ORDEM INCORRETA " contador = contador + 1" ESTÁ INCORRETA, NÃO DELIMITA O FIM DO PARAMETRO
+
+for( contador = contador + 1; var contador = 1; contador <= 10) {
+    alert("Contador atual: " + contador);
+}
+F - TODAS OS PARAMETROS ESTÃO FORA DE ORDEM
+-----------------------------------------
+É comum usarmos o **zero** para iniciar um laço de repetição. Isso nos trará vantagens quando, nas próximas atividades, formos trabalhar com *Array's*. Mas preste atenção, quando usamos o zero para iniciar uma repetição, precisamos substituir o sinal do limitador (espaco2), de ``<=`` (menor igual) para apenas ``<`` (menor), pois o zero conta como primeiro elemento dentro do laço.
+
+A ideia é que o laço deve se repetir 10 vezes, se trocarmos o valor de *i* por *zero* e mantermos o *<=*, o laço irá se repetir 11 vezes! Dito isso, temos o seguinte código:
+
+for( var i = 0; i < 10; i++ ) {
+    alert( "O resultado é " + (2 * i) );
+}
+
+Converta-o para usar a instrução while. Lembre-se: o resultado do programa tem que ser o mesmo!
+
+var i=0;
+
+while(i < 10){
+    alert( "O resultado é " + (2 * i) );
+    i++;
+}
+
+-----------------------------------------
+<meta charset="UTF-8">
+<script>
+
+    function pulaLinha() {
+
+        document.write("<br>");
+    }
+
+    function mostra(frase) {
+
+        document.write(frase);
+        pulaLinha();
+    }
+
+    var totalDeEventos = parseInt(prompt("Informe o total de eventos"));
+
+    var contador = 1;
+    var totalGastoComEventos = 0;
+
+    while(contador <= totalDeEventos) {
+
+        var gasto = parseFloat(prompt("Informe total gasto com evento"));
+        totalGastoComEventos = totalGastoComEventos + gasto;
+        contador++;
+    }
+
+    var media = totalGastoComEventos / totalDeEventos;
+
+    mostra("A média de gastos é " + media);
+
+    BASTA PASSAR A VARIAVEL totalGastoComEventos PARA FORA DO WHILE, GARANTINDO QUE ELE NÃO SEJA ZERADO AUTOMATICAMENTE A CADA PASSADA
+-----------------------------------------
+Era uma vez, um código que ganhou vida...
+
+O código abaixo tentou furar a festa dos códigos elegantes. E foi julgado por sua estrutura. Observe:
+
+var contador = 1;
+
+while(contador <= 3) {
+
+    alert("Deixe-me entrar!");
+    contador++;
+}
+
+-----------------------------------------
+Ao longo do curso, aprendemos a lidar com tipos diferentes como, texto, número e booleano (ex.: 'true' ou 'false'). Exemplos desses tipos são:
+
+var nome = "Regina"; // texto, ou tecnicamente falando, uma string
+var idade = 22; // número
+var temCarteira = true; // booleanoCOPIAR CÓDIGO
+Por fim, aprendemos sobre o tipo de dado chamado array. Ele permite que uma variável possua vários valores.
+
+Qual das opções abaixo declara corretamente um array?
+
+var idades = 10,12,20,30;
+F - para se declarar um array, precisa, obrigatoriamente, estar entre [colchetes]
+
+Alternativa correta
+var nomes = {"Helena", "Sulivan", "Saladino"};
+F - para se declarar um array, precisa, obrigatoriamente, estar entre [colchetes]
+
+Alternativa correta
+var coisas = ["Gisele", 12, true];
+V - estão declarado de forma correta
+-----------------------------------------
+Giordano adora pizza. Acessando um sistema de pedido online ele escolheu a pizza de Atum em uma lista com outras pizzas de diversos sabores.
+
+Colocando um "raio X" no programa que ele acessou, é bem provável que ele fosse feito em JavaScript e tivesse a seguinte lista:
+
+var pizzas = ["Portuguesa", "Mussarela", "Atum", "Margherita" ];COPIAR CÓDIGO
+Qual das opções abaixo acessa corretamente ao item da lista que é a pizza de Atum?
+
+
+pizzas[3]
+F - conta-se a partir do 0 portanto o 3 é Margherita
+
+
+pizzas[2]
+V - conta-se a partir do 0 portanto atum é o 2
+
+
+pizzas(2)
+F - para referenciar um dos itens do array precisamos colocar a referencia entre [colchetes]
+-----------------------------------------
+Temos a seguinte array:
+
+var codigos  = ["IDNOCLIP" , "IDDQD", "IDKFA"];COPIAR CÓDIGO
+Aprendemos que podemos saber o tamanho do array através de:
+
+codigos.size
+F - o certo é length
+
+
+codigos.lenght
+F - length - o T vem antes do H
+
+
+Alternativa correta
+codigos.length
+V - está correto
+
+A resposta correta é:
+
+codigos.lengthCOPIAR CÓDIGO
+Muito cuidado para não escrever codigos.lenght, caso contrário você terá problemas, pois o resultado será undefined.
+-----------------------------------------
+Tânia escreveu um pequeno trecho de código que imprime todas as parcelas do cartão que ainda precisa pagar:
+
+var parcelas = [10.40, 40.00, 100.18, 200];
+for(var i = 0; i < parcelas.lenght; i = i + 1) {
+    document.write(parcelas[i]);
+}
+document.write("FIM");COPIAR CÓDIGO
+O problema é que o trecho de código acima exibe apenas "FIM", ou seja, parece que nem chega a executar a instrução dentro do for.
+
+Qual é o problema do código anterior?
+
+O PROBLEMA É QUE LENGTH ESTÁ ESRRADO L E N G T H NÃO É HT 
+-----------------------------------------
+Na prova de estrutura de dados, Jiba tinha a seguinte lista:
+
+var jogadores = ["Saladino", "Cage", "Xur", "Rayson"];COPIAR CÓDIGO
+O exercício pedia que ele exibisse um alerta para cada item da lista e ele a implementou da seguinte forma:
+
+for( var i = 1; i < jogadores.length; i++) {
+
+    alert(jogadores[i]);
+}COPIAR CÓDIGO
+Apesar de acreditar que seu código está correto, ele ganhou nota 7, pois cometeu uma gafe. Seu professor disse que ele exibiu todos os nomes, exceto "Saladino".
+
+Qual é o problema do código de Jiba? Como você pode alterá-lo para que ele exiba todos os nomes da lista sem deixar nenhum de fora?
+
+R - BASTA TROCAR A INICIALIZAÇÃO DO FOR PARA 0 - DE (var i = 1; PARA (var i = 0; POIS A CONTAGEM COMEÇA NO 0
+-----------------------------------------
+Claudete está intrigada com o seguinte código de seu amigo Bruno:
+
+var letras = ['A', 'B', 'C', 'D'];
+
+for( var i = 0; i <= letras.length; i++ ) {
+    alert(letras[i]);
+}COPIAR CÓDIGO
+A intenção do código é exibir um alerta para cada letra da lista. Contudo, vejam o resultado na sequência:
+
+A
+
+B
+
+C
+
+D
+
+undefined
+
+Veja que a lista possui apenas quatro elementos e que foram exibidos cinco alertas! Inclusive o valor do último foi undefined. Com certeza ele é um estranho no ninho.
+
+Ajude Claudete a corrigir o código de Bruno apontando o problema no seu código. Assim que descobrir, clique em continuar para ver a resposta do instrutor.
+
+BASTA ALTERAR A CONDIÇÃO DO FOR DE i <= letras.length PARA i < letras.length GARANTINDO QUE ELE PARE EM 3
+-----------------------------------------
+Temos a seguinte lista de frutas:
+
+var frutas = ["abacaxi", "banana", "melão"];COPIAR CÓDIGO
+Se quisermos adicionar mais um item no array de frutas, o que devemos fazer?
+
+frutas.push("abacate");
+V - está dando um push corretamente
+
+
+frutas = "abacate";
+F - Está redefinindo o valor de frutas, não dando um push
+
+frutas.push["abacate"];
+F - push é uma função padrão, ou seja utilizamos ()
+-----------------------------------------
+
+-----------------------------------------
+
+-----------------------------------------
+
+
+
